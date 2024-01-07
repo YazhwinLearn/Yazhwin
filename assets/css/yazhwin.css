@@ -336,7 +336,7 @@ header
 --------------------------------------------- 
 */
 .header-area {
-  position: fi;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -691,6 +691,7 @@ welcome
   background-position: center center;
   background-size: cover; 
   height: 550px;
+  margin-top: 80px;
 }
 
 .welcome-area .header-text {
