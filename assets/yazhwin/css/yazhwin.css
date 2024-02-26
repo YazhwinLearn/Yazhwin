@@ -1,32 +1,4 @@
-/*
 
-Softy Pinko
-
-https://templatemo.com/tm-535-softy-pinko
-
-*/
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. welcome
-06. courses
-07. team
-08. pricing
-09. blog
-10. contact
-11. footer
-12. preloader
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 /* 
 ---------------------------------------------
@@ -336,7 +308,7 @@ header
 --------------------------------------------- 
 */
 .header-area {
-  position: fixed;
+  position: fi;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -351,9 +323,9 @@ header
 }
 
 
-.header-area .main-nav .logo {
+.header-area .main-nav .logo img {
   float: left;
-  height: 40px;
+  height: 30px;
   margin-top: 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -361,19 +333,6 @@ header
   transition: all 0.3s ease 0s;
   margin-left: 30px;
   
-}
-.header-area .main-nav .logo img{
-  float: left;
-  height: 40px;
-  padding-right: 10px;
-}
-
-.header-area .main-nav .logo .logo1{
-  float: left;
-  margin-top: 10px;
-  height: 20px;
-  /* width: 200px; */
-  /* padding-right: 10px; */
 }
 
 .header-area .main-nav .nav {
@@ -427,8 +386,8 @@ header
   position: absolute;
   overflow: auto;
   background-color:#fff;
-  border-radius:5px;
-  width: 200px;
+  border-radius:8px;
+  width: 300px;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
 
@@ -438,43 +397,32 @@ header
 
 .header-area .main-nav .nav li .dropdown-options a {
   display: block;
-  color: #000000;
-  padding: 5px;
+  color: #0b013f;
+  padding: 50px;
   text-decoration: none;
-  padding:0px 0px;
+  padding:0px 0px 0px  20px ;
+  text-align: left;
 }
 
 .header-area .main-nav .nav li .dropdown-options a:hover {
-  color: #0a0a23;
+  color: #090983;
   background-color: #ddd;
-  border-radius:5px;
+  border-radius:8px;
 }
 .apply {
-  align-items: center;
-  /* background-image: linear-gradient(144deg,#1e04a1, #5B42F3 50%,#00DDEB); */
-  background-color: #040a80;
-  margin-top: 20px;
-  width: 40px;
-  height: 40px;
+  margin-top: 10px;
   float: right;
-  border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   /* box-sizing: border-box; */
   color: #FFFFFF;
   display: flex;
-  font-family: Phantomsans, sans-serif;
+  
   font-size: 16px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
+  padding: 15px 30px 15px 30px;
+  border-radius: 8px;
+  background-color: #040a80;
+  color: #fff;
 }
 .apply:hover{
   background-color: rgb(2, 12, 54);
@@ -561,7 +509,7 @@ header
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
   background-color: transparent;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .header-area .main-nav .menu-trigger.active span:before {
@@ -612,13 +560,13 @@ header
 
 @media (max-width: 991px) {
   .header-area {
-    padding: 0px 15px;
+    padding: 0px 0px;
     height: 80px;
     box-shadow: none;
     text-align: center;
   }
   .header-area .container {
-    padding: 0px;
+    padding: 0px 10px 0px 0px;
   }
   .header-area .logo {
     margin-top: 27px !important;
@@ -639,7 +587,7 @@ header
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
-    margin-left: 0px;
+    margin: 0px 0px 0px 0px;
   }
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
@@ -654,7 +602,18 @@ header
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
+    
     padding: 0px !important;
+    border: none !important;
+    background: #fff !important;
+    color: #3B566E !important;
+    
+  }
+  .header-area .main-nav .nav li .dropdown-options a {
+    height: 50px !important;
+    line-height: 50px !important;
+    /* margin-left: 50px; */
+    padding-left: 50px !important;
     border: none !important;
     background: #fff !important;
     color: #3B566E !important;
@@ -664,7 +623,8 @@ header
     color: #02063b;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #070707 !important;
+    background: #ddeaf7 !important;
+    
   }
 }
 
@@ -680,115 +640,69 @@ welcome
 --------------------------------------------- 
 */
 .welcome-area {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-image: url(../images/bannerbg.jpg); */
-  background-color: #000080;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; 
-  height: 550px;
-  margin-top: 80px;
-}
-
-.welcome-area .header-text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-55%);
+  padding: 100px 200px 100px 200px;
+  background: #010370;
+  color: #fff;
   text-align: center;
-  width: 100%;
 }
-
-.welcome-area .header-text h1 {
-  font-weight: 500;
+.welcome-area h1 {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 600;
   font-size: 36px;
-  line-height: 75px;
-  letter-spacing: 1.4px;
-  margin-bottom: 30px;
+  line-height: 70px;
+}
+.welcome-area p {
+  padding-bottom: 50px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width:600px){
+  
+.welcome-area {
+  padding: 100px 50px 100px 50px;
+  background: #010370;
   color: #fff;
+  text-align: center;
 }
-
-.welcome-area .header-text p {
-  font-weight: 400;
-  font-size: 15px;
+.welcome-area h1 {
+  padding-bottom: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+}
+.welcome-area p {
+  /* padding: 0px 100px 50px 100px; */
+  font-weight: 500;
+  font-size: 18px;
+}
+}
+/* servicec Area */
+.service{
+  background: #fff;
+  padding: 50px 100px 50px 100px;
+  justify-content: space-between;
+}
+.service .ser-head{
+  font-size: 36px;
+  font-weight: 600;
+  color: #02063b;
+  text-align: center;
+}
+.service .serv{
+  margin: 50px 0px 50px 0px;
+  /* justify-items: center; */
+  justify-content: space-around;
+}
+.service .serv .item{
+  /* width: 40%; */
+  padding: 50px;
   color: #fff;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  margin-bottom: 40px;
-  position: relative;
+  border: 1px solid #02063b;
+  /* background: #c20505; */
 }
-
-@media (max-width: 991px) {
-  .welcome-area .header-text {
-    top: 65% !important;
-    transform: perspective(1px) translateY(-60%) !important;
-    text-align: center;
-  }
-  .welcome-area .header-text h1 {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 15px;
-  }
-  .welcome-area .header-text h1 span {
-    color: #fff;
-  }
-  .welcome-area .header-text p {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 820px) {
-  .welcome-area{
-    /* height: 300px; */
-  }
-  .welcome-area .header-text {
-    top: 65% !important;
-    
-    transform: perspective(1px) translateY(-60%) !important;
-  }
-   .welcome-area .header-text h1 {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 15px;
-  }
-  .welcome-area .header-text p {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 765px) {
-  .welcome-area {
-    /* margin-bottom: 100px; */
-    /* height: 550px; */
-    
-  }
-  .welcome-area .header-text {
-    top: 50% !important;
-    transform: perspective(1px) translateY(-50%) !important;
-    text-align: center;
-  }
-  .welcome-area .header-text .buttons {
-    display: none;
-  }
-  .welcome-area .header-text h1 {
-    font-weight: 600;
-    font-size: 24px !important;
-    line-height: 40px !important;
-    margin-bottom: 30px !important;
-  }
-  .welcome-area .header-text h1 span {
-    color: #fff;
-  }
-  .welcome-area .header-text p {
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    line-height: 32px;
-    margin-bottom: 40px;
-  }
+.service .serv .item img{
+  width: 10%;
 }
