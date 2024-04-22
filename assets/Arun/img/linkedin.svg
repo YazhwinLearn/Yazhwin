@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84">
+<svg fill="currentColor" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" class="w-8 h-8 hover:fill-black">
   <defs>
     <style>
       .cls-1 {
         fill: #fff;
+      }
+      .hover\:invert:hover {
+        filter: invert(100%);
       }
     </style>
   </defs>
